@@ -3,14 +3,42 @@
   "WorkspaceRootPath": "E:\\test\\test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\controllers\\employeeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\controllers\\employeeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -19,14 +47,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\WeatherForecast.cs",
-              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\WeatherForecast.cs*",
-              "RelativeToolTip": "EmployeeDepartmentWebApi\\WeatherForecast.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Controllers\\DepartmentController.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\DepartmentController.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\DepartmentController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T05:05:15.776Z",
+              "WhenOpened": "2025-02-05T09:06:32.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeApiController.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs*",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:53:37.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Program.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Program.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:44:29.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\DepartmentRepository.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Repositories\\DepartmentRepository.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:29:10.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\EmployeeRepository.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Repositories\\EmployeeRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:09:02.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Repositories\\IDepartmentRepository.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\IDepartmentRepository.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Repositories\\IDepartmentRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T08:05:33.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Repositories\\IEmployeeRepository.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\IEmployeeRepository.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Repositories\\IEmployeeRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T07:39:39.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T05:07:08.31Z",
               "EditorCaption": ""
             }
           ]

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using empDeptWebApi.EmployeeDTO;
+using EmployeeDepartmentWebApi.Repositories;
 
 namespace empDeptWebApi.Controllers
 {
@@ -11,12 +12,12 @@ namespace empDeptWebApi.Controllers
     [ApiController]
     public class EmployeeApiController : ControllerBase
     {
-        private readonly EmployeeContext employeeContext;
+        private readonly IEmployeeRepository _employeeRepository;
         private readonly IMapper _mapper;
 
-        public EmployeeApiController(EmployeeContext employeeContext, IMapper mapper)
+        public EmployeeApiController(IEmployeeRepository employeeRepository, IMapper mapper)
         {
-            this.employeeContext = employeeContext;
+            _employeeRepository = employeeRepository;
             _mapper = mapper;
         }
 
@@ -24,7 +25,7 @@ namespace empDeptWebApi.Controllers
         [Route("GetEmployees")]
         public async Task<ActionResult<IEnumerable<EmployeeTransferDTO>>> GetEmployees()
         {
-            var employees = await employeeContext.Employee.Include(e => e.Department).ToListAsync();
+            var employees = await _employeeRepository.GetAllEmployeesAsync();
             var employeeDTOs = _mapper.Map<IEnumerable<EmployeeTransferDTO>>(employees);
             return Ok(employeeDTOs);
         }
@@ -32,7 +33,7 @@ namespace empDeptWebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<EmployeeTransferDTO>> GetEmployee(int id)
         {
-            var employee = await employeeContext.Employee.Include(e => e.Department).FirstOrDefaultAsync(e => e.EmployeeId == id);
+            var employee = await _employeeRepository.GetEmployeeByIdAsync(id);
             if (employee == null) return NotFound();
             var employeeDTO = _mapper.Map<EmployeeTransferDTO>(employee);
             return Ok(employeeDTO);
@@ -41,17 +42,8 @@ namespace empDeptWebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<EmployeeTransferDTO>> CreateEmployee(EmployeeCreateDTO employeeCreateDTO)
         {
-            var employee = new Employee
-            {
-                FirstName = employeeCreateDTO.FirstName,
-                LastName = employeeCreateDTO.LastName,
-                Age = employeeCreateDTO.Age,
-                Salary = employeeCreateDTO.Salary,
-                DepartmentId = employeeCreateDTO.DepartmentId
-            };
-            employeeContext.Employee.Add(employee);
-            await employeeContext.SaveChangesAsync();
-
+            var employee = _mapper.Map<Employee>(employeeCreateDTO);
+            await _employeeRepository.AddEmployeeAsync(employee);
             var resultDTO = _mapper.Map<EmployeeTransferDTO>(employee);
             return CreatedAtAction(nameof(GetEmployee), new { id = employee.EmployeeId }, resultDTO);
             
@@ -60,33 +52,21 @@ namespace empDeptWebApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateEmployee(int id, EmployeeCreateDTO employeeDTO)
         {
-            var existingEmployee = await employeeContext.Employee.FindAsync(id);
+            var existingEmployee = await _employeeRepository.GetEmployeeByIdAsync(id);
             if (existingEmployee == null) return NotFound();
 
             _mapper.Map(employeeDTO, existingEmployee);
 
-            try
-            {
-                await employeeContext.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!employeeContext.Employee.Any(e => e.EmployeeId == id))
-                    return NotFound();
-                throw;
-            }
+            await _employeeRepository.UpdateEmployeeAsync(existingEmployee);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {
-            var employee = await employeeContext.Employee.FindAsync(id);
+            var employee = await _employeeRepository.GetEmployeeByIdAsync(id);
             if (employee == null) return NotFound();
-
-            employeeContext.Employee.Remove(employee);
-            await employeeContext.SaveChangesAsync();
-
+            await _employeeRepository.DeleteEmployeeAsync(id);
             return NoContent();
         }
     }

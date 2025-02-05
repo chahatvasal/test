@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using empDeptWebApi.Models;
+using EmployeeDepartmentWebApi.Repositories;
 
 namespace empDeptWebApi.Controllers
 {
@@ -9,24 +10,24 @@ namespace empDeptWebApi.Controllers
     [ApiController]
     public class DepartmentController : ControllerBase
     {
-        private readonly EmployeeContext employeeContext;
+        private readonly IDepartmentRepository _departmentRepository;
 
-        public DepartmentController (EmployeeContext employeeContext)
+        public DepartmentController (IDepartmentRepository departmentRepository)
         {
-            this.employeeContext = employeeContext;
+            _departmentRepository = departmentRepository;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DepartmentClass>>> GetDepartments()
         {
-            return await employeeContext.Department.Include(d => d.Employees).ToListAsync();
+            var departments = await _departmentRepository.GetAllDepartmentsAsync();
+            return Ok(departments);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<DepartmentClass>> GetDepartment(int id)
         {
-            var department = await employeeContext.Department.Include(d => d.Employees)
-                            .FirstOrDefaultAsync(d => d.DepartmentId == id);
+            var department = await _departmentRepository.GetDepartmentByIdAsync(id);
             if (department == null) return NotFound();
             return department;
         }
@@ -34,8 +35,8 @@ namespace empDeptWebApi.Controllers
         [HttpPost]
         public async Task<ActionResult<DepartmentClass>> CreateDepartment(DepartmentClass department)
         {
-            employeeContext.Department.Add(department);
-            await employeeContext.SaveChangesAsync();
+            
+            await _departmentRepository.AddDepartmentAsync(department);
             return CreatedAtAction(nameof(GetDepartment), new { id = department.DepartmentId }, department);
         }
 
@@ -44,31 +45,14 @@ namespace empDeptWebApi.Controllers
         {
             if (id != department.DepartmentId) return BadRequest();
 
-            employeeContext.Entry(department).State = EntityState.Modified;
-
-            try
-            {
-                await employeeContext.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!employeeContext.Department.Any(e => e.DepartmentId == id))
-                    return NotFound();
-                throw;
-            }
-
+            await _departmentRepository.UpdateDepartmentAsync(department);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDepartment(int id)
         {
-            var department = await employeeContext.Department.FindAsync(id);
-            if (department == null) return NotFound();
-
-            employeeContext.Department.Remove(department);
-            await employeeContext.SaveChangesAsync();
-
+            await _departmentRepository.DeleteDepartmentAsync(id);
             return NoContent();
         }
     }

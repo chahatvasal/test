@@ -1,6 +1,7 @@
 using empDeptWebApi.Models;
 using Microsoft.EntityFrameworkCore;
 using empDeptWebApi.Profiles;
+using EmployeeDepartmentWebApi.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,6 +10,8 @@ builder.Services.AddDbContext<EmployeeContext>(x => x.UseSqlServer(builder.Confi
 
 builder.Services.AddControllers();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
