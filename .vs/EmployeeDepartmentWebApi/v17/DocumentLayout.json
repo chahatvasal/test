@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\EmployeeDepartmentWebApi\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\test\\test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\WeatherForecast.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\WeatherForecast.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\WeatherForecast.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T05:05:15.776Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
