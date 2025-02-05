@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using empDeptWebApi.Models;
 using EmployeeDepartmentWebApi.Repositories;
+using System.Net;
 
 namespace empDeptWebApi.Controllers
 {
@@ -20,40 +21,95 @@ namespace empDeptWebApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DepartmentClass>>> GetDepartments()
         {
-            var departments = await _departmentRepository.GetAllDepartmentsAsync();
-            return Ok(departments);
+            try
+            {
+                var departments = await _departmentRepository.GetAllDepartmentsAsync();
+                return Ok(departments);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, $"Error fetching departments: {ex.Message}");
+            }
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<DepartmentClass>> GetDepartment(int id)
         {
-            var department = await _departmentRepository.GetDepartmentByIdAsync(id);
-            if (department == null) return NotFound();
-            return department;
+            try
+            {
+                var department = await _departmentRepository.GetDepartmentByIdAsync(id);
+                if (department == null) return NotFound("Department not found");
+                return department;
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, $"Error fetching department: {ex.Message}");
+            }
         }
 
         [HttpPost]
         public async Task<ActionResult<DepartmentClass>> CreateDepartment(DepartmentClass department)
         {
-            
-            await _departmentRepository.AddDepartmentAsync(department);
-            return CreatedAtAction(nameof(GetDepartment), new { id = department.DepartmentId }, department);
+
+            if (department == null) return BadRequest("Department data is required.");
+
+            try
+            {
+                await _departmentRepository.AddDepartmentAsync(department);
+                return CreatedAtAction(nameof(GetDepartment), new { id = department.DepartmentId }, department);
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, $"Database error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, $"Error creating department: {ex.Message}");
+            }
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDepartment(int id, DepartmentClass department)
         {
-            if (id != department.DepartmentId) return BadRequest();
+            if (id != department.DepartmentId) return BadRequest("Department ID mismatch.");
 
-            await _departmentRepository.UpdateDepartmentAsync(department);
-            return NoContent();
+            try
+            {
+                var existingDepartment = await _departmentRepository.GetDepartmentByIdAsync(id);
+                if (existingDepartment == null) return NotFound("Department not found");
+
+                await _departmentRepository.UpdateDepartmentAsync(department);
+                return NoContent();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                return NotFound("Failed to update department. It may have been modified by another user.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, $"Error updating department: {ex.Message}");
+            }
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDepartment(int id)
         {
-            await _departmentRepository.DeleteDepartmentAsync(id);
-            return NoContent();
+            try
+            {
+                var existingDepartment = await _departmentRepository.GetDepartmentByIdAsync(id);
+                if (existingDepartment == null) return NotFound("Department not found");
+
+                await _departmentRepository.DeleteDepartmentAsync(id);
+                return NoContent();
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, $"Database error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, $"Error deleting department: {ex.Message}");
+            }
         }
     }
 }

@@ -345,3 +345,4 @@ E:\test\test\EmployeeDepartmentWebApi\obj\Debug\net8.0\refint\EmployeeDepartment
 E:\test\test\EmployeeDepartmentWebApi\obj\Debug\net8.0\EmployeeDepartmentWebApi.pdb
 E:\test\test\EmployeeDepartmentWebApi\obj\Debug\net8.0\EmployeeDepartmentWebApi.genruntimeconfig.cache
 E:\test\test\EmployeeDepartmentWebApi\obj\Debug\net8.0\ref\EmployeeDepartmentWebApi.dll
+E:\test\test\EmployeeDepartmentWebApi\bin\Debug\net8.0\Newtonsoft.Json.dll

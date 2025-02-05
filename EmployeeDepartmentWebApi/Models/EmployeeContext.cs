@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EmployeeDepartmentWebApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace empDeptWebApi.Models
 {
@@ -8,6 +9,8 @@ namespace empDeptWebApi.Models
         {
         }
         public DbSet<Employee> Employee { get; set; }
+
+        public DbSet<User> User {  get; set; }
         public DbSet<DepartmentClass> Department { get; set; }
         //Configure relationships and models
         protected override void OnModelCreating(ModelBuilder modelBuilder)

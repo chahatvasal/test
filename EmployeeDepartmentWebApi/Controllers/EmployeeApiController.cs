@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using empDeptWebApi.EmployeeDTO;
 using EmployeeDepartmentWebApi.Repositories;
+using System.Net;
 
 namespace empDeptWebApi.Controllers
 {
@@ -23,51 +24,90 @@ namespace empDeptWebApi.Controllers
 
         [HttpGet]
         [Route("GetEmployees")]
-        public async Task<ActionResult<IEnumerable<EmployeeTransferDTO>>> GetEmployees()
+        public async Task<IActionResult> GetAllEmployees()
         {
-            var employees = await _employeeRepository.GetAllEmployeesAsync();
-            var employeeDTOs = _mapper.Map<IEnumerable<EmployeeTransferDTO>>(employees);
-            return Ok(employeeDTOs);
+            try
+            {
+                var employees = await _employeeRepository.GetAllEmployeesAsync();
+                var employeeDTOs = _mapper.Map<IEnumerable<EmployeeTransferDTO>>(employees);
+                return Ok(employeeDTOs);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<EmployeeTransferDTO>> GetEmployee(int id)
+        public async Task<IActionResult> GetEmployee(int id)
         {
-            var employee = await _employeeRepository.GetEmployeeByIdAsync(id);
-            if (employee == null) return NotFound();
-            var employeeDTO = _mapper.Map<EmployeeTransferDTO>(employee);
-            return Ok(employeeDTO);
+            try
+            {
+                var employee = await _employeeRepository.GetEmployeeByIdAsync(id);
+                if (employee == null) return NotFound("Employee not found");
+
+                var employeeDTO = _mapper.Map<EmployeeTransferDTO>(employee);
+                return Ok(employeeDTO);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
         }
 
         [HttpPost]
-        public async Task<ActionResult<EmployeeTransferDTO>> CreateEmployee(EmployeeCreateDTO employeeCreateDTO)
+        public async Task<IActionResult> AddEmployee(EmployeeCreateDTO employeeCreateDTO)
         {
-            var employee = _mapper.Map<Employee>(employeeCreateDTO);
-            await _employeeRepository.AddEmployeeAsync(employee);
-            var resultDTO = _mapper.Map<EmployeeTransferDTO>(employee);
-            return CreatedAtAction(nameof(GetEmployee), new { id = employee.EmployeeId }, resultDTO);
-            
+            if (employeeCreateDTO == null)
+                return BadRequest("Employee creation data is required.");
+            try
+            {
+                var employee = _mapper.Map<Employee>(employeeCreateDTO);
+                await _employeeRepository.AddEmployeeAsync(employee);
+                return CreatedAtAction(nameof(GetEmployee), new { id = employee.EmployeeId }, employee);
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError,
+                    $"Database update error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateEmployee(int id, EmployeeCreateDTO employeeDTO)
         {
-            var existingEmployee = await _employeeRepository.GetEmployeeByIdAsync(id);
-            if (existingEmployee == null) return NotFound();
+            try
+            {
+                var existingEmployee = await _employeeRepository.GetEmployeeByIdAsync(id);
+                if (existingEmployee == null) return NotFound("Employee not found");
 
-            _mapper.Map(employeeDTO, existingEmployee);
+                _mapper.Map(employeeDTO, existingEmployee);
+                await _employeeRepository.UpdateEmployeeAsync(existingEmployee);
 
-            await _employeeRepository.UpdateEmployeeAsync(existingEmployee);
-            return NoContent();
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {
-            var employee = await _employeeRepository.GetEmployeeByIdAsync(id);
-            if (employee == null) return NotFound();
-            await _employeeRepository.DeleteEmployeeAsync(id);
-            return NoContent();
+            try
+            {
+                await _employeeRepository.DeleteEmployeeAsync(id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
         }
     }
 }

@@ -35,7 +35,7 @@ namespace empDeptWebApi.Migrations
 
                     b.HasKey("DepartmentId");
 
-                    b.ToTable("Department");
+                    b.ToTable("Department", (string)null);
                 });
 
             modelBuilder.Entity("empDeptWebApi.Models.Employee", b =>
@@ -69,7 +69,7 @@ namespace empDeptWebApi.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Employee");
+                    b.ToTable("Employee", (string)null);
                 });
 
             modelBuilder.Entity("empDeptWebApi.Models.Employee", b =>

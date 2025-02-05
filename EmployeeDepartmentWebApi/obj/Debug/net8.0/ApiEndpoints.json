@@ -110,7 +110,7 @@
   },
   {
     "ContainingType": "empDeptWebApi.Controllers.EmployeeApiController",
-    "Method": "CreateEmployee",
+    "Method": "AddEmployee",
     "RelativePath": "api/EmployeeApi",
     "HttpMethod": "POST",
     "IsController": true,
@@ -122,17 +122,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "empDeptWebApi.EmployeeDTO.EmployeeTransferDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "empDeptWebApi.Controllers.EmployeeApiController",
@@ -148,17 +138,7 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "empDeptWebApi.EmployeeDTO.EmployeeTransferDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "empDeptWebApi.Controllers.EmployeeApiController",
@@ -199,23 +179,13 @@
   },
   {
     "ContainingType": "empDeptWebApi.Controllers.EmployeeApiController",
-    "Method": "GetEmployees",
+    "Method": "GetAllEmployees",
     "RelativePath": "api/EmployeeApi/GetEmployees",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[empDeptWebApi.EmployeeDTO.EmployeeTransferDTO, EmployeeDepartmentWebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "EmployeeDepartmentWebApi.Controllers.WeatherForecastController",

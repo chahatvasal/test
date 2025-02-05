@@ -18,6 +18,8 @@ namespace empDeptWebApi.Models
         //Foreign key to Department table
         public int DepartmentId { get; set; } //creates link to the department
 
+        public string Email { get; set; } //new field
+
         public DepartmentClass Department { get; set; } //Represents the Department an Employee belongs to
 
     }
