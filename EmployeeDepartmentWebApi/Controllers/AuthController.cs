@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace EmployeeDepartmentWebApi.Controllers
 {
 
-    [Route("api/[controller]")]
+    [Microsoft.AspNetCore.Components.Route("api/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
