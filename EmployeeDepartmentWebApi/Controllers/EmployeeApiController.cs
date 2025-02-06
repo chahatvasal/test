@@ -6,9 +6,11 @@ using AutoMapper;
 using empDeptWebApi.EmployeeDTO;
 using EmployeeDepartmentWebApi.Repositories;
 using System.Net;
+using Microsoft.AspNetCore.Authorization;
 
 namespace empDeptWebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeApiController : ControllerBase

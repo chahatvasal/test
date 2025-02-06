@@ -8,11 +8,11 @@ using empDeptWebApi.Models;
 
 #nullable disable
 
-namespace empDeptWebApi.Migrations
+namespace EmployeeDepartmentWebApi.Migrations
 {
     [DbContext(typeof(EmployeeContext))]
-    [Migration("20250203194216_init")]
-    partial class init
+    [Migration("20250206080150_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,33 @@ namespace empDeptWebApi.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("EmployeeDepartmentWebApi.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId")
+                        .IsUnique();
+
+                    b.ToTable("User");
+                });
+
             modelBuilder.Entity("empDeptWebApi.Models.DepartmentClass", b =>
                 {
                     b.Property<int>("DepartmentId")
@@ -33,6 +60,7 @@ namespace empDeptWebApi.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DepartmentId"));
 
                     b.Property<string>("DepartmentName")
+                        .IsRequired()
                         .HasColumnType("varchar(200)")
                         .HasColumnName("DepartmentName");
 
@@ -56,11 +84,17 @@ namespace empDeptWebApi.Migrations
                     b.Property<int>("DepartmentId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("varchar(200)")
                         .HasColumnName("FirstName");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("varchar(200)")
                         .HasColumnName("LastName");
 
@@ -73,6 +107,17 @@ namespace empDeptWebApi.Migrations
                     b.HasIndex("DepartmentId");
 
                     b.ToTable("Employee");
+                });
+
+            modelBuilder.Entity("EmployeeDepartmentWebApi.Models.User", b =>
+                {
+                    b.HasOne("empDeptWebApi.Models.Employee", "Employee")
+                        .WithOne("User")
+                        .HasForeignKey("EmployeeDepartmentWebApi.Models.User", "EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
                 });
 
             modelBuilder.Entity("empDeptWebApi.Models.Employee", b =>
@@ -89,6 +134,11 @@ namespace empDeptWebApi.Migrations
             modelBuilder.Entity("empDeptWebApi.Models.DepartmentClass", b =>
                 {
                     b.Navigation("Employees");
+                });
+
+            modelBuilder.Entity("empDeptWebApi.Models.Employee", b =>
+                {
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

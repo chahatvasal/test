@@ -1,4 +1,5 @@
-﻿using EmployeeDepartmentWebApi.Models;
+﻿
+using EmployeeDepartmentWebApi.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace empDeptWebApi.Models
@@ -22,6 +23,12 @@ namespace empDeptWebApi.Models
                 .HasOne(e => e.Department)//Each employee has one department
                 .WithMany(d => d.Employees) //Each department has many employees
                 .HasForeignKey(e => e.DepartmentId); //foreign key linking EmployeeMaster to Department 
+
+            //configure one to one relationship between User and Employee
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.Employee)
+                .WithOne(e => e.User)
+                .HasForeignKey<User>(u => u.EmployeeId);
         }
 
 
