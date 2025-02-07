@@ -57,7 +57,7 @@ if (app.Environment.IsDevelopment())
 
 //Add Exception Handling Middleware
 app.UseMiddleware<ExceptionMiddleware>();
-
+app.UseMiddleware<HTTPRequestMiddleware>();
 
 
 app.UseHttpsRedirection();
