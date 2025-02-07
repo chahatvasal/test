@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using EmployeeDepartmentWebApi.Models;
+﻿
 namespace empDeptWebApi.Models
 {
     public class Employee

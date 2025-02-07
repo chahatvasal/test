@@ -1,4 +1,4 @@
-﻿using empDeptWebApi.Models;
+﻿
 namespace EmployeeDepartmentWebApi.Repositories
 {
     public interface IEmployeeRepository

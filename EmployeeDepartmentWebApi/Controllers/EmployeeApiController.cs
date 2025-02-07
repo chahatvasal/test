@@ -1,12 +1,5 @@
-﻿using empDeptWebApi.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using AutoMapper;
-using empDeptWebApi.EmployeeDTO;
-using EmployeeDepartmentWebApi.Repositories;
-using System.Net;
-using Microsoft.AspNetCore.Authorization;
+﻿
+
 
 namespace empDeptWebApi.Controllers
 {

@@ -1,5 +1,4 @@
-﻿using empDeptWebApi.Models;
-using Microsoft.EntityFrameworkCore;
+﻿
 
 namespace EmployeeDepartmentWebApi.Repositories
 {

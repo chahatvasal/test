@@ -1,6 +1,4 @@
-﻿using empDeptWebApi.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Identity.Client;
+﻿
 
 namespace EmployeeDepartmentWebApi.Repositories
 {

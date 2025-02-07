@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using empDeptWebApi.Models;
-using EmployeeDepartmentWebApi.Repositories;
-using System.Net;
+﻿
 
 namespace empDeptWebApi.Controllers
 {

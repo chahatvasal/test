@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "E:\\test\\test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\models\\employeecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\models\\employeecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\employeedepartmentwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\employeedepartmentwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,28 +59,8 @@
       "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\employeedepartmentwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\employeedepartmentwebapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\test\\test\\EmployeeDepartmentWebApi\\Migrations\\20250206080150_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EmployeeDepartmentWebApi\\Migrations\\20250206080150_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\test\\test\\EmployeeDepartmentWebApi\\Migrations\\20250206075346_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EmployeeDepartmentWebApi\\Migrations\\20250206075346_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\models\\employeecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\models\\employeecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\test\\test\\EmployeeDepartmentWebApi\\Migrations\\20250205171142_Init1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,10 +75,6 @@
       "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -85,6 +85,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|e:\\test\\test\\employeedepartmentwebapi\\migrations\\20250206080150_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E6D30A2-8525-4314-BD99-4A20A61033C6}|EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj|solutionrelative:employeedepartmentwebapi\\migrations\\20250206080150_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -99,45 +103,55 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Controllers\\AuthController.cs",
-              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\GlobalUsing.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\GlobalUsing.cs*",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\GlobalUsing.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T09:07:35.713Z",
+              "WhenOpened": "2025-02-07T06:26:33.136Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T09:07:35.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "JwtTokenService.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Authentication\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Authentication\\JwtTokenService.cs",
-              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Authentication\\JwtTokenService.cs*",
-              "RelativeToolTip": "EmployeeDepartmentWebApi\\Authentication\\JwtTokenService.cs*",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Authentication\\JwtTokenService.cs",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Authentication\\JwtTokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T08:57:04.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T08:57:04.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\appsettings.json",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\appsettings.json",
-              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\appsettings.json*",
-              "RelativeToolTip": "EmployeeDepartmentWebApi\\appsettings.json*",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\appsettings.json",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-06T08:49:06.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T08:49:06.156Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "launchSettings.json",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Properties\\launchSettings.json",
@@ -145,25 +159,23 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-06T08:29:21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T08:29:21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Authentication\\JwtSettings.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Authentication\\JwtSettings.cs",
-              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Authentication\\JwtSettings.cs*",
-              "RelativeToolTip": "EmployeeDepartmentWebApi\\Authentication\\JwtSettings.cs*",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Authentication\\JwtSettings.cs",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Authentication\\JwtSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T08:27:34.981Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T08:27:34.981Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 21,
               "Title": "20250206080150_InitialCreate.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Migrations\\20250206080150_InitialCreate.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Migrations\\20250206080150_InitialCreate.cs",
@@ -171,12 +183,11 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Migrations\\20250206080150_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T08:01:51.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T08:01:51.211Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "20250206075346_init.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Migrations\\20250206075346_init.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Migrations\\20250206075346_init.cs",
@@ -184,12 +195,11 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Migrations\\20250206075346_init.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T07:53:46.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T07:53:46.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Models\\User.cs",
@@ -197,12 +207,11 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T07:45:20.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T07:45:20.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "20250205171142_Init1.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Migrations\\20250205171142_Init1.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Migrations\\20250205171142_Init1.cs",
@@ -210,25 +219,23 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Migrations\\20250205171142_Init1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:11:45.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T17:11:45.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "EmployeeContext.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Models\\EmployeeContext.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Models\\EmployeeContext.cs",
               "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Models\\EmployeeContext.cs",
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Models\\EmployeeContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswB4AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:10:27.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T17:10:27.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Models\\Employee.cs",
@@ -236,38 +243,36 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Models\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T16:56:39.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T16:56:39.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
               "Title": "ExceptionMiddleware.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Middlewares\\ExceptionMiddleware.cs",
               "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Middlewares\\ExceptionMiddleware.cs",
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Middlewares\\ExceptionMiddleware.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAEAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAEAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T10:49:17.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmployeeDepartmentWebApi",
+              "DocumentIndex": 6,
+              "Title": "EmployeeDepartmentWebApi.csproj",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj",
-              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj*",
-              "RelativeToolTip": "EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj*",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\EmployeeDepartmentWebApi.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-05T09:57:59.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T09:57:59.335Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Controllers\\DepartmentController.cs",
@@ -275,38 +280,35 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\DepartmentController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAUwG8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T09:06:32.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T09:06:32.943Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "EmployeeApiController.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs",
-              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs*",
-              "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs*",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\EmployeeApiController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T08:53:37.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T08:53:37.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Program.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Program.cs",
-              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Program.cs*",
-              "RelativeToolTip": "EmployeeDepartmentWebApi\\Program.cs*",
+              "ToolTip": "E:\\test\\test\\EmployeeDepartmentWebApi\\Program.cs",
+              "RelativeToolTip": "EmployeeDepartmentWebApi\\Program.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAAcwEYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T08:44:29.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T08:44:29.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "DepartmentRepository.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\DepartmentRepository.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Repositories\\DepartmentRepository.cs",
@@ -314,12 +316,11 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Repositories\\DepartmentRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwFMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T08:29:10.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T08:29:10.783Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "E:\\test\\test\\EmployeeDepartmentWebApi\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "EmployeeDepartmentWebApi\\Repositories\\EmployeeRepository.cs",
@@ -327,8 +328,7 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Repositories\\EmployeeRepository.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAcwEkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T08:09:02.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T08:09:02.963Z"
             },
             {
               "$type": "Document",
@@ -340,8 +340,7 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Repositories\\IDepartmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T08:05:33.55Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T08:05:33.55Z"
             },
             {
               "$type": "Document",
@@ -353,8 +352,7 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Repositories\\IEmployeeRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T07:39:39.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T07:39:39.417Z"
             },
             {
               "$type": "Document",
@@ -366,8 +364,7 @@
               "RelativeToolTip": "EmployeeDepartmentWebApi\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T05:07:08.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T05:07:08.31Z"
             }
           ]
         }

@@ -1,12 +1,4 @@
-using empDeptWebApi.Models;
-using Microsoft.EntityFrameworkCore;
-using empDeptWebApi.Profiles;
-using EmployeeDepartmentWebApi.Repositories;
-using EmployeeDepartmentWebApi.Middlewares;
-using EmployeeDepartmentWebApi.Authentication;
-using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -56,15 +48,17 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-//Add Exception Handling Middleware
-app.UseMiddleware<ExceptionMiddleware>();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//Add Exception Handling Middleware
+app.UseMiddleware<ExceptionMiddleware>();
+
+
 
 app.UseHttpsRedirection();
 

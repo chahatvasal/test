@@ -1,6 +1,4 @@
-﻿using AutoMapper;
-using empDeptWebApi.EmployeeDTO;
-using empDeptWebApi.Models;
+﻿
 
 
 namespace empDeptWebApi.Profiles

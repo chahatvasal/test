@@ -1,9 +1,4 @@
-﻿using empDeptWebApi.Models;
-using EmployeeDepartmentWebApi.Authentication;
-using EmployeeDepartmentWebApi.Models;
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿
 
 
 namespace EmployeeDepartmentWebApi.Controllers

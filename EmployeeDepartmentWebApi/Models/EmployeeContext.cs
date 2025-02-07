@@ -1,6 +1,6 @@
 ﻿
-using EmployeeDepartmentWebApi.Models;
-using Microsoft.EntityFrameworkCore;
+
+
 
 namespace empDeptWebApi.Models
 {
