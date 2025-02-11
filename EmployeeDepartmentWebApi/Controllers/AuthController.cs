@@ -19,6 +19,7 @@ namespace EmployeeDepartmentWebApi.Controllers
             _logger = logger;
         }
 
+        [AllowAnonymous]
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] User login)
         {

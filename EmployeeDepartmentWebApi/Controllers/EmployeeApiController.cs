@@ -17,6 +17,7 @@ namespace empDeptWebApi.Controllers
             _mapper = mapper;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         [Route("GetEmployees")]
         public async Task<IActionResult> GetAllEmployees()
@@ -35,6 +36,7 @@ namespace empDeptWebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetEmployee(int id)
         {
@@ -57,6 +59,7 @@ namespace empDeptWebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> AddEmployee(EmployeeCreateDTO employeeCreateDTO)
         {
@@ -75,6 +78,7 @@ namespace empDeptWebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateEmployee(int id, EmployeeCreateDTO employeeDTO)
         {
@@ -100,6 +104,7 @@ namespace empDeptWebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmployee(int id)
         {

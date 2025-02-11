@@ -13,6 +13,7 @@ namespace empDeptWebApi.Controllers
             _departmentRepository = departmentRepository;
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<DepartmentClass>>> GetDepartments()
         {
@@ -29,6 +30,7 @@ namespace empDeptWebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<ActionResult<DepartmentClass>> GetDepartment(int id)
         {
@@ -51,6 +53,7 @@ namespace empDeptWebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<ActionResult<DepartmentClass>> CreateDepartment(DepartmentClass department)
         {
@@ -68,6 +71,7 @@ namespace empDeptWebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateDepartment(int id, DepartmentClass department)
         {
@@ -91,6 +95,7 @@ namespace empDeptWebApi.Controllers
             }
         }
 
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDepartment(int id)
         {

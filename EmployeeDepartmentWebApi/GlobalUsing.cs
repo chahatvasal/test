@@ -23,3 +23,4 @@ global using Newtonsoft.Json;
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Http;
 global using Serilog;
+global using Microsoft.AspNetCore.Http.HttpResults;
