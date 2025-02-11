@@ -21,3 +21,5 @@ global using Microsoft.EntityFrameworkCore.Migrations;
 global using System.Net;
 global using Newtonsoft.Json;
 global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Http;
+global using Serilog;

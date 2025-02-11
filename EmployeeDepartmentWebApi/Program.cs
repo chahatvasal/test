@@ -1,6 +1,17 @@
 
 
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//adding serilog provider
+Log.Logger = new LoggerConfiguration().
+    MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File("Log/log.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 //load JWT Settings from appsettings.json
 var jwtSettingsSection = builder.Configuration.GetSection("JwtSettings");
@@ -58,8 +69,7 @@ if (app.Environment.IsDevelopment())
 //Add Exception Handling Middleware
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseMiddleware<HTTPRequestMiddleware>();
-
-
+app.UseMiddleware<RequestLoggingMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseRouting();
